@@ -1,0 +1,51 @@
+.header {
+  padding-top: 30px;
+  a {
+    transition: color 0.3s;
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: $accentColor;
+      }
+    }
+  }
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+.logo-img {
+  max-width: 12rem;
+  @media (max-width: $max576) {
+    max-width: 10rem;
+  }
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  @media (max-width: $max992) {
+    display: none;
+  }
+}
+.nav-link {
+  text-transform: uppercase;
+}
+.contacts-email {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  @media (max-width: $max992) {
+    font-size: $font14;
+  }
+  @media (max-width: $max576) {
+    display: none;
+  }
+
+  svg {
+    width: 1.5rem;
+    fill: $accentColor;
+  }
+}

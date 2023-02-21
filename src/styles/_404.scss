@@ -1,0 +1,19 @@
+.wrapper-404 {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  text-align: center;
+  .content {
+    h1 {
+      font-size: 3rem;
+      
+    }
+    a {
+      display: inline-block;
+      text-decoration: underline;
+      padding-top: 2em;
+      color: inherit;
+      font-family: inherit;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $ffPrimary;
+  color: $white;
+  font-weight: 400;
+  background-color: $bgColor;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+svg {
+  display: block;
+}
+// for body & html when .active
+.locked {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+// container
+.container {
+  max-width: 75rem;
+  width: 90%;
+  margin: 0 auto;
+}
+// button
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+// links
+a {
+  color: $white;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+}
